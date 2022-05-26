@@ -1,0 +1,62 @@
+﻿<Window x:Class="PADKwiatyZadanie.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PADKwiatyZadanie"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox Margin="10,10,0,13" Name="listBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="194" Height="200">
+            <ListBoxItem Background="green" Foreground="green" FontFamily="Arial" FontSize="20" FontWeight="Bold">
+                <CheckBox Name="greenone" Checked="greenone_Checked" Unchecked="greenone_UnChecked">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Kaktus"></TextBlock>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+            <ListBoxItem Background="DarkBlue" Foreground="DarkBlue" FontFamily="Arial" FontSize="20" FontWeight="Bold">
+                <CheckBox Name="darkblueCheckBox" Checked="darkblueCheckBox_Checked" Unchecked="darkblueCheckBox_UnChecked">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Chryzantema"></TextBlock>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+            <ListBoxItem Background="Brown" Foreground="brown" FontFamily="Arial" FontSize="20" FontWeight="Bold">
+                <CheckBox Name="brownCheckBox" Checked="brownCheckBox_Checked" Unchecked="brownCheckBox_UnChecked">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Imponea"></TextBlock>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+            <ListBoxItem Background="LightGreen" Foreground="LightGreen" FontFamily="Arial" FontSize="20" FontWeight="Bold">
+                <CheckBox Name="fourCheckBox" Checked="fourCheckBox_Checked" Unchecked="fourCheckBox_UnChecked">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Eukaliptus"></TextBlock>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+            <ListBoxItem Background="Orange" Foreground="Orange" FontFamily="Arial" FontSize="20" FontWeight="Bold">
+                <CheckBox Name="fiveCheckBox" Checked="fiveCheckBox_Checked" Unchecked="fiveCheckBox_UnChecked">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Nagietek"></TextBlock>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+            <ListBoxItem Background="Pink" Foreground="Pink" FontFamily="Arial" FontSize="20" FontWeight="Bold">
+                <CheckBox Name="pinkCheckBox" Checked="pinkCheckBox_Checked" Unchecked="pinkCheckBox_UnChecked">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Kwiat Lotosu"></TextBlock>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+        </ListBox>
+        <Rectangle Name="oneBox" HorizontalAlignment="Left" Height="90" Margin="264,10,0,0" VerticalAlignment="Top" Width="90" Fill="Green" Visibility="Hidden" Stroke="Green"  StrokeThickness="2"/>
+        <Rectangle Name="twoBox" HorizontalAlignment="Left" Height="90" Margin="400,10,0,0" VerticalAlignment="Top" Width="90" Fill="DarkBlue" Visibility="Hidden" Stroke="DarkBlue"  StrokeThickness="2"/>
+        <Rectangle Name="threeBox" HorizontalAlignment="Left" Height="90" Margin="535,10,0,0" VerticalAlignment="Top" Width="90" Fill="Brown" Visibility="Hidden" Stroke="Brown"  StrokeThickness="2"/>
+        <Rectangle Name="fourBox" HorizontalAlignment="Left" Height="90" Margin="264,141,0,0" VerticalAlignment="Top" Width="90" Fill="LightGreen" Visibility="Hidden" Stroke="LightGreen"  StrokeThickness="2"/>
+        <Rectangle Name="fiveBox" HorizontalAlignment="Left" Height="90" Margin="400,141,0,0" VerticalAlignment="Top" Width="90" Fill="orange" Visibility="Hidden" Stroke="orange"  StrokeThickness="2"/>
+        <Rectangle Name="sixBox" HorizontalAlignment="Left" Height="90" Margin="535,141,0,0" VerticalAlignment="Top" Width="90" Fill="Pink" Visibility="Hidden" Stroke="Pink"  StrokeThickness="2"/>
+        <ProgressBar Name="progressBox" Margin="24,334,610,52" Maximum="6" Minimum="0" Value="0"/>
+    </Grid>
+</Window>
